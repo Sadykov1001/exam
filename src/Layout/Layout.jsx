@@ -6,12 +6,15 @@ import logo2 from "../assets/award (4).png"
 import logo3 from "../assets/award (5).png"
 import logo4 from "../assets/award (6).png"
 import logo5 from "../assets/award (7).png"
+import { Button, Flex } from 'antd';
 import Btns from '../../Btns'
 import { UnorderedListOutlined } from '@ant-design/icons'
+import useDarkSide from "../config/useDarkMode";
 const Layot = () => {
+	const [theme, toggleTheme] = useDarkSide()
 	return (
 		<div className=' pt-[0px]  '>
-			<header className='flex px-[50px] py-[10px]  bg-blue-400  justify-between items-center '>
+			<header className='flex px-[50px] py-[10px]  bg-gray-800  justify-between items-center '>
 				<img src={logo} alt="" />
 			<ul className='sm:flex gap-[50px] hidden '>
 				<li>
@@ -30,7 +33,12 @@ const Layot = () => {
 					<Link to={'/'}>Contacts</Link>
 				</li>
 				</ul>
-			<Btns text={"Talk to a human"}/>
+				<Btns text={"Talk to a human"} />
+				<Button type="dashed" ghost onClick={toggleTheme} className='text-white'>
+      ♾️
+						
+    </Button>
+				
 </header>
 			<Outlet />
 

@@ -35,7 +35,7 @@ const contentStyle = {
 
 const SecondPage = () => {
 	return (
-		<div>
+		<div className='dark:bg-gray-900 bg-white'>
 			<header style={{ backgroundImage: `url(${bg})` }} className='py-[50px]'>
 				<div className='flex gap-[10px] text-[#A7A7B3] justify-center items-center'>
 					<HomeOutlined />

@@ -139,7 +139,7 @@ const FourthPage = () => {
 				</form>
 			</Modal>
 
-			<Todo data={data} deleteData={DeletData} editData={editData} />
+			<Todo data={data} GetData={GetData} deleteData={DeletData} editData={editData} />
 		</div>
 	)
 }

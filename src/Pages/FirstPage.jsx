@@ -43,6 +43,8 @@ import {
 	XOutlined,
 } from '@ant-design/icons'
 import Btns from '../../Btns'
+import { CircularProgress } from '@mui/material'
+import CircleProgress from '../components/CircleProgress'
 
 const contentStyle = {
 	height: '160px',
@@ -54,7 +56,7 @@ const contentStyle = {
 
 const FirstPage = () => {
 	return (
-		<div>
+		<div className='dark:bg-black bg-white'>
 			<header style={{ backgroundImage: `url(${header})` }}>
 				<div className='w-[100%] sm:py-[150px] py-[50px] text-center sm:text-start sm:items-center  sm:flex gap-[200px] sm:px-[120px]'>
 					<div className='text-white '>
@@ -155,25 +157,28 @@ const FirstPage = () => {
 
 			<div className='sm:flex justify-center gap-[70px]'>
 				<div className='text-center'>
-					<img src={circle1} className='sm:pl-[0px] pl-[120px]' alt='' />
+					<CircleProgress percent={"75"} />
 					<br />
 					<p>Years of experience</p>
 				</div>
 				<br />
 				<div className='text-center'>
-					<img src={circle2} className='sm:pl-[0px] pl-[120px]' alt='' />
+										<CircleProgress percent={"75"}/>
+
 					<br />
 					<p>Awards</p>
 				</div>
 				<br />
 				<div className='text-center'>
-					<img src={circle3} className='sm:pl-[0px] pl-[120px]' alt='' />
+										<CircleProgress percent={"75"}/>
+
 					<br />
 					<p>Projects</p>
 				</div>
 				<br />
 				<div className='text-center'>
-					<img src={circle4} className='sm:pl-[0px] pl-[120px]' alt='' />
+										<CircleProgress percent={"75"} color="" />
+
 					<br />
 					<p>Happy clients</p>
 				</div>

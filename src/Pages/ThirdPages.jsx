@@ -26,7 +26,7 @@ import card2 from '../assets/hover.png'
 
 const ThirdPages = () => {
 	return (
-		<div>
+		<div className='dark:bg-black bg-white'>
 			<header style={{ backgroundImage: `url(${bg})` }} className='py-[50px]'>
 				<div className='flex gap-[10px] text-[#A7A7B3] justify-center items-center'>
 					<HomeOutlined />
